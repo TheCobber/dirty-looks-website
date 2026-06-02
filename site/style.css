@@ -195,10 +195,17 @@ a:hover {
   max-width: 800px;
 }
 
-.video-wrapper video {
+.video-wrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: block;
-  background: #000;
+  height: 100%;
 }
 
 .media-photos {
